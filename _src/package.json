@@ -1,0 +1,21 @@
+{
+  "name": "deaththerapy.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "harp compile _src/webapp .././",
+    "start": "harp server _src/webapp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deaththerapy/deaththerapy.github.io.git"
+  },
+  "keywords": [],
+  "author": "Joseph Post <joe@jcpst.com> (http://jcpst.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deaththerapy/deaththerapy.github.io/issues"
+  },
+  "homepage": "https://github.com/deaththerapy/deaththerapy.github.io#readme"
+}
