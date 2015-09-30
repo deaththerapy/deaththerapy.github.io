@@ -2,8 +2,8 @@ language: node_js
 node_js:
 - node
 before_script:
-- chmod +x ./scripts/deploy.sh
-after_success: "./scripts/deploy.sh"
+- chmod +x ./scripts/deploy
+after_success: "./scripts/deploy"
 env:
   global:
     secure: Tlopofz2DIA39CvazgjNl5Ehs1sCUVURkyyB5NtPHuHDc2k/KITckZYgKXhCL6xKUppZPsB4CIfAi0+xw4smCpgqYN3+We0LU7RgpvNHFzt4hArvsycVUuS7W6SBdBZTKdm20HwJIaiTsP4M5fQYh9YcrtITMs3D4oXMUkzdmMvk19L4/UeF5I1ZbJZgH1Huv0fp1fwv81hOPkkt3Ih4jgrKbK+7kygraotmPHgbTY+Nu7KPPfzFN6Tl4ZzB617KGqTUORoQ7Pc2wFRxAmnUHG9Xvya9Yuk7ecwD7VCVxKdgs7h/ojTwbOFBRCJFj+ox40Y1DlYG+pu0VpRPMfq1bWsy9FCFJjBX8OAsHLDdaz8FeWh34Os3smskipN/BsdMq/Wl7EGzgzhtwRQhO/1C/ZpMwbRRxNmxXqpq66hgYaGyN1qaRFB3bdixTqCZsy+rtOK80y5OE/qVb+v+h71qHLw0U88U4V3QwMGPRjVAdmM4u7j3qsGE/9esDRWMfcOY3PT+ZemhRvedXU0fehMYYIgs6wEgg2d13m3qMPUzyZUlNWXYKdLElqRW8q5RsXYaazu1o4DVo2n+Xp4wph1wsNDgk6rYQIF/lFCM8jgBIU5z7LVzDEcWsi7T4hcqPGG1G4kis0xiQD4KM2hpK8WZvsIcDvFVuyOL3hD3hOKYDFQ=
