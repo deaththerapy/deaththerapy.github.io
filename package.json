@@ -1,10 +1,11 @@
 {
   "name": "deaththerapy.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "Home of deaththerapy.net",
   "main": "index.js",
   "scripts": {
     "build": "harp compile src build",
+    "deploy:build": "harp compile src /tmp/__temp_static_content",
     "start": "harp server src"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/deaththerapy/deaththerapy.github.io#readme",
   "dependencies": {
+    "git": "^0.1.5",
     "harp": "^0.19.0"
   }
 }
