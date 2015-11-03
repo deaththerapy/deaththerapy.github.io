@@ -44,9 +44,12 @@ html(lang='en')
 		//-/////////////////////////////////////////////////////////////////////////
 		section#about.about: .container: .row: .col-lg-12.text-center
 			h2 Get Cured
-			iframe(name='mini' style='border:0px;height:100px;' src='http://widget.cdbaby.com/2d3c15ad-79e6-4109-805e-77e7c3c74948/mini/dark/opaque')
+			h3: a(href='https://itunes.apple.com/us/album/death-therapy/id1044851697') Buy on iTunes
 			br
-			iframe(name='mini' style='border:0px;height:100px;' src='http://widget.cdbaby.com/0721a8ed-0a6a-4420-bd22-9b86148a8cb9/mini/light/opaque')
+			- var urls = ['http://widget.cdbaby.com/2d3c15ad-79e6-4109-805e-77e7c3c74948/mini/dark/opaque','http://widget.cdbaby.com/0721a8ed-0a6a-4420-bd22-9b86148a8cb9/mini/light/opaque','http://widget.cdbaby.com/78189418-fb26-4fae-8522-11942c0dadd6/mini/light/opaque']
+			for url in urls
+				iframe(name='mini' style='border:0px;height:100px;' src='#{url}')
+				br
 			//-p.lead Thanks Rob for the art!
 
 		//-/////////////////////////////////////////////////////////////////////////
@@ -81,6 +84,8 @@ html(lang='en')
 				br
 				a(href='https://itunes.apple.com/us/album/baby-steps/id907601447') Baby Steps
 				h4 Streaming
+				a(href='https://www.youtube.com/channel/UCJU8odrbUOQ-EgPlTuFmZlw') YouTube
+				br
 				a(href='https://soundcloud.com/johnanthonyclark') Soundcloud
 				br
 				a(href='http://www.pandora.com/john-clark-rock') Pandora
@@ -90,8 +95,30 @@ html(lang='en')
 				a(href='https://open.spotify.com/album/6XXF35kTAbMJRGwvmtY27M') Time To Begin
 				h4 Bandcamp
 				a(href='https://johnclark2.bandcamp.com/album/death-therapy') Death Therapy
-				h3 People
+				br
+				a(href='https://johnclark2.bandcamp.com/music') Discography
 				
+				h3 Friends
+				a(href='https://www.facebook.com/theebq/?fref=ts') Echo Base Quartet
+				br
+				a(href='https://www.facebook.com/HKN-133101103385937/?ref=hl') Helen Keller Nation
+				br
+				a(href='https://www.facebook.com/johnnie.heber.er/?fref=ts') Johnnie Heberer
+				br
+				a(href='http://jcpst.com') Joseph Post
+				br
+				a(href='http://www.mississippiflapjacks.com') Mississippi Flapjacks
+				br
+				a(href='https://www.facebook.com/NineRabbitsLaughing/?ref=aymt_homepage_panel') Nine Rabbits Laughing
+				br
+				a(href='https://www.facebook.com/oaksteellightning/?fref=ts') Oak Steel and Lightning
+				br
+				a(href='http://www.relix.com/') Relix
+				br
+				a(href='http://www.robbiefrazelle.com') Robbie Frazelle
+				br
+				a(href='https://www.facebook.com/Woodshine/?fref=ts') Woodshine
+				br
 			// 	for i in [1,2,3,4]
 			// 		.col-md-6: .portfolio-item: a(href='#')
 			// 			img.img-portfolio.img-responsive(src="img/portfolio-#{i}.jpg")
