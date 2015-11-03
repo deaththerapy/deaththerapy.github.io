@@ -28,7 +28,7 @@ html(lang='en')
 				li.sidebar-brand: a(href='#top' onclick='$("#menu-close").click();') Death Therapy
 				li: a(href='#top' onclick='$("#menu-close").click();') Home
 				li: a(href='#about' onclick='$("#menu-close").click();') Stream
-				li: a(href='#services' onclick='$("#menu-close").click();') Store
+				// li: a(href='#services' onclick='$("#menu-close").click();') Store
 				li: a(href='#portfolio' onclick='$("#menu-close").click();') Links
 				li: a(href='#contact' onclick='$("#menu-close").click();') Contact
 
@@ -48,17 +48,17 @@ html(lang='en')
 			br
 			- var urls = ['http://widget.cdbaby.com/2d3c15ad-79e6-4109-805e-77e7c3c74948/mini/dark/opaque','http://widget.cdbaby.com/0721a8ed-0a6a-4420-bd22-9b86148a8cb9/mini/light/opaque','http://widget.cdbaby.com/78189418-fb26-4fae-8522-11942c0dadd6/mini/light/opaque']
 			for url in urls
-				iframe(name='mini' style='border:0px;height:100px;' src='#{url}')
 				br
+				iframe(name='mini' style='border:0px;height:100px;' src='#{url}')
 			//-p.lead Thanks Rob for the art!
 
 		//-/////////////////////////////////////////////////////////////////////////
 		// Services.
 		//-/////////////////////////////////////////////////////////////////////////
-		section#services.services: .container: .row.text-center: .col-lg-10.col-lg-offset-1
+		// section#services.services: .container: .row.text-center: .col-lg-10.col-lg-offset-1
 			// h2 Our Services
-			hr.small
-			.row
+			// hr.small
+			// .row
 				
 				// for i in [1,2,3,4]
 				// 	.col-md-3.col-sm-6: .service-item
@@ -131,7 +131,7 @@ html(lang='en')
 		// 	a.btn.btn-lg.btn-dark(href='#') Look at Me!
 
 		// Footer.
-		footer: .container: .row: .col-lg-10.col-lg-offset-1.text-center
+		footer#contact: .container: .row: .col-lg-10.col-lg-offset-1.text-center
 			ul.list-unstyled
 				li
 					i.fa.fa-envelope-o.fa-fw
