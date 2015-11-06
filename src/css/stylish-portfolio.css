@@ -241,3 +241,23 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+
+/* Media players */
+@media(min-width: 865px) {
+  .desktop-only {
+    display: block !important;
+  }
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@media(max-width: 864px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: block !important;
+  }
+}
