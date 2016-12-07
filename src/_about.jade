@@ -1,0 +1,30 @@
+// About.
+section#about.about: .container: .row: .col-lg-12.text-center
+  ul.list-inline
+    li: a(href='https://www.facebook.com/johnanthonyclarkmusic/')
+      i.fa.fa-facebook.fa-fw.fa-3x
+    li: a(href='https://twitter.com/JohnClark_Music')
+      i.fa.fa-twitter.fa-fw.fa-3x
+    li: a(href='https://instagram.com/johnclarkmusic/')
+      i.fa.fa-instagram.fa-fw.fa-3x
+    li: a(href='http://johnclarkmusic.tumblr.com/')
+      i.fa.fa-tumblr.fa-fw.fa-3x
+    li: a(href='https://www.youtube.com/channel/UCJU8odrbUOQ-EgPlTuFmZlw')
+      i.fa.fa-youtube.fa-fw.fa-3x
+    li: a(href='https://www.reverbnation.com/johnclark2')
+      i.fa.fa-star.fa-fw.fa-3x
+    
+
+  h2 Get Cured
+  h3: a(href='https://itunes.apple.com/us/album/death-therapy/id1044851697') Buy on iTunes
+  br
+  - var urls = ['http://widget.cdbaby.com/2d3c15ad-79e6-4109-805e-77e7c3c74948/mini/dark/opaque','http://widget.cdbaby.com/0721a8ed-0a6a-4420-bd22-9b86148a8cb9/mini/light/opaque','http://widget.cdbaby.com/78189418-fb26-4fae-8522-11942c0dadd6/mini/light/opaque']
+  for url in urls
+    .mobile-only
+      iframe(name='mini' style='width:90%;border:0px;height:100px;' src='#{url}')
+      br
+  iframe.desktop-only(
+    name='full' style='width:90%;height:520px;border:0px;margin: 0 auto;' 
+    src='http://widget.cdbaby.com/7262b27c-6ad4-4cd1-998b-b46e27e68d0a/full/dark/transparent'
+  )
+  //-p.lead Thanks Rob for the art!
