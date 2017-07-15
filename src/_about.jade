@@ -15,16 +15,14 @@ section#about.about: .container: .row: .col-lg-12.text-center
       i.fa.fa-star.fa-fw.fa-3x
     
 
-  h2 Get Cured
-  h3: a(href='https://itunes.apple.com/us/album/death-therapy/id1044851697') Buy on iTunes
+  h2 CiCaDiA is out now!
+  h3: a(href='https://itun.es/us/v4ISkb') Buy on iTunes
   br
-  - var urls = ['http://widget.cdbaby.com/2d3c15ad-79e6-4109-805e-77e7c3c74948/mini/dark/opaque','http://widget.cdbaby.com/0721a8ed-0a6a-4420-bd22-9b86148a8cb9/mini/light/opaque','http://widget.cdbaby.com/78189418-fb26-4fae-8522-11942c0dadd6/mini/light/opaque']
-  for url in urls
-    .mobile-only
-      iframe(name='mini' style='width:90%;border:0px;height:100px;' src='#{url}')
-      br
-  iframe.desktop-only(
-    name='full' style='width:90%;height:520px;border:0px;margin: 0 auto;' 
-    src='http://widget.cdbaby.com/7262b27c-6ad4-4cd1-998b-b46e27e68d0a/full/dark/transparent'
-  )
-  //-p.lead Thanks Rob for the art!
+
+  .center-block(style='max-width:600px;max-height:785px;min-width:300px;')
+    div(style='position: relative;height: 0;overflow: hidden;padding-bottom:100%; padding-top:200px;')
+      iframe(
+        name="album"
+        style="position:absolute;top:0px;left:0px;width:100%;height:100%;border:0px;" 
+        src="//widget.cdbaby.com/401e31c3-c8be-49f8-b0e3-1cf5fddf6916/album/light/opaque"
+      )
