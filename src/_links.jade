@@ -1,3 +1,7 @@
+mixin link(name, url)
+  a(href=url)= name
+  br
+
 // Links
 section#portfolio.portfolio: .container: .row: .col-lg-10.col-lg-offset-1.text-center
   h2 Links
@@ -6,82 +10,54 @@ section#portfolio.portfolio: .container: .row: .col-lg-10.col-lg-offset-1.text-c
     h3 Music
 
     h4 iTunes
-    a(href='https://itun.es/us/SckFlb') Gr8est Bits
-    br
-    a(href='https://itun.es/us/v4ISkb') CiCaDiA
-    br
-    a(href='https://itunes.apple.com/us/album/the-ghost-is-clear/id1179217918') The Ghost Is Clear
-    br
-    a(href='https://itunes.apple.com/us/album/death-therapy/id1044851697') Death Therapy
-    br
-    a(href='https://itunes.apple.com/us/album/baby-steps/id907601447') Baby Steps
-    br
-    a(href='https://itunes.apple.com/us/album/time-to-begin/id771237619') Time To Begin
+    +link('Gr8est Bits', 'https://itun.es/us/SckFlb')
+    +link('CiCaDia', 'https://itun.es/us/v4ISkb')
+    +link('The Ghost Is Clear', 'https://itunes.apple.com/us/album/the-ghost-is-clear/id1179217918')
+    +link('Death Therapy', 'https://itunes.apple.com/us/album/death-therapy/id1044851697')
+    +link('Baby Steps', 'https://itunes.apple.com/us/album/baby-steps/id907601447')
+    +link('Time To Begin', 'https://itunes.apple.com/us/album/time-to-begin/id771237619')
     
     h4 Streaming
-    a(href='https://www.youtube.com/channel/UCJU8odrbUOQ-EgPlTuFmZlw') YouTube
-    br
-    a(href='https://soundcloud.com/johnanthonyclark') Soundcloud
-    br
-    a(href='http://www.pandora.com/john-clark-rock') Pandora
+    +link('YouTube', 'https://www.youtube.com/channel/UCJU8odrbUOQ-EgPlTuFmZlw')
+    +link('SoundCloud', 'https://soundcloud.com/johnanthonyclark')
+    +link('Pandora', 'http://www.pandora.com/john-clark-rock')
     
-    h5 On Spotify...
-    a(href='https://open.spotify.com/album/2FfV4G8hGKXvAcxKkDGt13') Gr8est Bits
-    br
-    a(href='https://open.spotify.com/album/3STanZEndf9X8gThyvkSPl') CiCaDiA
-    br
-    a(href='https://play.spotify.com/album/2wXfcX3wMZUcW1nPHK9VNx') The Ghost Is Clear
-    br
-    a(href='https://play.spotify.com/album/3X8Z9r3sOti4Z2GBa23Cur') Death Therapy
-    br
-    a(href='https://open.spotify.com/album/6mlvBH0cdvWzwG7StLIRRl') Baby Steps
-    br
-    a(href='https://open.spotify.com/album/6XXF35kTAbMJRGwvmtY27M') Time To Begin
+    h4 Spotify
+    +link('Gr8est Bits', 'https://open.spotify.com/album/2FfV4G8hGKXvAcxKkDGt13')
+    +link('CiCaDiA', 'https://open.spotify.com/album/3STanZEndf9X8gThyvkSPl')
+    +link('The Ghost Is Clear', 'https://play.spotify.com/album/2wXfcX3wMZUcW1nPHK9VNx')
+    +link('Death Therapy', 'https://play.spotify.com/album/3X8Z9r3sOti4Z2GBa23Cur')
+    +link('Baby Steps', 'https://open.spotify.com/album/6mlvBH0cdvWzwG7StLIRRl')
+    +link('Time To Begin', 'https://open.spotify.com/album/6XXF35kTAbMJRGwvmtY27M')
+    
     h4 Bandcamp
-    a(href='https://johnclark2.bandcamp.com/album/death-therapy') Death Therapy
-    br
-    a(href='https://johnclark2.bandcamp.com/music') Discography
+    +link('CiCaDiA', 'https://johnclark2.bandcamp.com/album/cicadia')
+    +link('Discography', 'https://johnclark2.bandcamp.com/music')
+
     h4 Tabs!
-    a(href='https://www.ultimate-guitar.com/tabs/john_clark_tabs.htm') Ultimate Guitar
+    +link('Ultimate Guitar', 'https://www.ultimate-guitar.com/tabs/john_clark_tabs.htm')
     
     h3 Friends
-    a(href='http://www.darkeningofthesun.com/') Darkening of the Sun Festival
-    br
-    a(href='https://www.facebook.com/theebq/?fref=ts') Echo Base Quartet
-    br
-    a(href='https://www.facebook.com/HKN-133101103385937/?ref=hl') Helen Keller Nation
-    br
-    a(href='https://www.facebook.com/johnnie.heber.er/?fref=ts') Johnnie Heberer
-    br
-    a(href='http://jcpst.com') Joseph Post
-    br
-    a(href='http://www.mississippiflapjacks.com') Mississippi Flapjacks
-    br
-    a(href='https://www.facebook.com/nahkoandmedicineforthepeople/') Nahko and Medicine for the People
-    br
-    a(href='https://www.facebook.com/neurologicmusic/') Neuro-Logic
-    br
-    a(href='https://www.facebook.com/onlysoundband/') Only Sound
-    br
-    a(href='https://www.facebook.com/NineRabbitsLaughing/?ref=aymt_homepage_panel') Nine Rabbits Laughing
-    br
-    a(href='https://www.facebook.com/oaksteellightning/?fref=ts') Oak Steel and Lightning
-    br
-    a(href='https://www.facebook.com/Petes-Pedals-St-Louis-1539987856307597/') Pete's Pedals
-    br
-    a(href='https://www.facebook.com/The-Soothing-Tones-of-Peter-Rodenberg-112514492098891/') Peter Rodenberg
-    br
-    a(href='http://www.relix.com/') Relix
-    br
-    a(href='https://www.facebook.com/TheOfficialResidents/') The Residents
-    br
-    a(href='http://www.robbiefrazelle.com') Robbie Frazelle
-    br
-    a(href='https://www.facebook.com/schwagofficial/') The Schwag
-    br
-    a(href='https://www.facebook.com/ScrubAndAceHa/') Scrub and Ace Ha
-    br
-    a(href='https://www.facebook.com/Woodshine/?fref=ts') Woodshine
-    br
-    a(href='https://www.facebook.com/ZenJunkieArt/') Zen Junkie
-    br
+    +link('Darkening of the Sun Festival', 'http://www.darkeningofthesun.com/')
+    +link('Echo Base Quartet', 'https://www.facebook.com/theebq/?fref=ts')
+    +link('Ewen SinClair', 'http://evermoonmusicstudio.com/')
+    +link('Helen Keller Nation', 'https://www.facebook.com/HKN-133101103385937/?ref=hl')
+    +link('Jacob Luecke', 'https://soundcloud.com/jacob-luecke')
+    +link('Johnnie Heberer', 'https://www.facebook.com/johnnie.heber.er/?fref=ts')
+    +link('Joseph Post', 'http://jcpst.com')
+    +link('Kyle Brauch', 'http://kylebrauch.com/')
+    +link('Mississippi Flapjacks', 'http://www.mississippiflapjacks.com')
+    +link('Nahko and Medicine for the People', 'https://www.facebook.com/nahkoandmedicineforthepeople/')
+    +link('Neuro-Logic', 'https://www.facebook.com/neurologicmusic/')
+    +link('Only Sound', 'https://www.facebook.com/onlysoundband/')
+    +link('Nine Rabbits Laughing', 'https://www.facebook.com/NineRabbitsLaughing/?ref=aymt_homepage_panel')
+    +link('Oak Steel and Lightning', 'https://www.facebook.com/oaksteellightning/?fref=ts')
+    +link("Pete's Pedals", 'https://www.facebook.com/Petes-Pedals-St-Louis-1539987856307597/')
+    +link('Peter Rodenberg', 'https://www.facebook.com/The-Soothing-Tones-of-Peter-Rodenberg-112514492098891/')
+    +link('Relix', 'http://www.relix.com/')
+    +link('Terra Jewell Walker','https://www.facebook.com/fluiddruidartifacts/')
+    +link('The Residents', 'https://www.facebook.com/TheOfficialResidents/')
+    +link('Robbie Frazelle', 'http://www.robbiefrazelle.com')
+    +link('The Schwag', 'https://www.facebook.com/schwagofficial/')
+    +link('Scrub and Ace Ha', 'https://www.facebook.com/ScrubAndAceHa/')
+    +link('Zen Junkie','https://www.facebook.com/ZenJunkieArt/')
