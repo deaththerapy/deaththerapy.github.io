@@ -1,0 +1,25 @@
+mixin link(name, url)
+  a(href=url)= name
+  br
+
+// Links
+section#reviews.portfolio: .container: .row: .col-lg-10.col-lg-offset-1.text-center
+  h2 Reviews
+  hr.small
+  .row
+    h3 moonOcean
+    p.
+      The master of imagination returns with a ukulele-driven album set to mark
+      the upcoming birth-date of his daughter. This is something completely 
+      different yet again. These compositions combine organic brightness and 
+      layers upon layers of colour and delicate detail, to create something 
+      that is all at once ambient and lightly energizing...#[+link('read more', 'https://stereostickman.com/reviews/john-clark-moonocean/')]
+    
+    h3 CiCaDiA
+    p.
+      #[em Stickfolk Dream Pt.1] kicks off this project from songwriter John Clark –
+      a dramatic and haunting way to begin, setting the scene effectively for
+      the colour and chaos that will follow, though leading you astray somewhat
+      when it comes to the joyful acoustic delicacy of the following song 
+      #[a(href='https://www.youtube.com/watch?v=QZat0oQ_9dk'): em Hoppy].
+      Nothing is ever quite as it seems on this album...#[+link('read more', 'https://stereostickman.com/reviews/john-clark-cicadia/')]
