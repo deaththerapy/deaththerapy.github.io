@@ -1,0 +1,14 @@
+mixin social(name, url)
+  li: a(href=url title=name)
+    i(class=' fa fa-#{name} fa-fw fa-3x')
+
+ul.list-inline
+  +social('facebook', 'https://www.facebook.com/johnanthonyclarkmusic/')
+  +social('youtube', 'https://www.youtube.com/playlist?list=PL-7IQw2_9MqKZesDQuc-MKFCpaU7wDyLE')
+  +social('spotify', 'https://open.spotify.com/artist/6qI3xSLLnXumS2aNE3Rmlo')
+  +social('bandcamp', 'https://johnclark2.bandcamp.com/')
+  +social('twitter', 'https://twitter.com/JohnClark_Music')
+  +social('instagram', 'https://instagram.com/johnclarkmusic/')
+  +social('tumblr', 'http://johnclarkmusic.tumblr.com/')
+  +social('star', 'https://www.reverbnation.com/johnclark2')
+br

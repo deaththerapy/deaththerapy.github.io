@@ -1,40 +1,5 @@
-mixin social(name, url)
-  li: a(href=url)
-    i(class=' fa fa-#{name} fa-fw fa-3x')
-
 // About.
 section#about.about: .container: .row: .col-lg-12.text-center
-  ul.list-inline
-    +social('facebook', 'https://www.facebook.com/johnanthonyclarkmusic/')
-    +social('spotify', 'https://open.spotify.com/artist/6qI3xSLLnXumS2aNE3Rmlo')
-    +social('twitter', 'https://twitter.com/JohnClark_Music')
-    +social('instagram', 'https://instagram.com/johnclarkmusic/')
-    +social('tumblr', 'http://johnclarkmusic.tumblr.com/')
-    +social('youtube', 'https://www.youtube.com/playlist?list=PL-7IQw2_9MqKZesDQuc-MKFCpaU7wDyLE')
-    +social('star', 'https://www.reverbnation.com/johnclark2')
-
-   div(style="position:relative;height:0;padding-bottom:56.25%")
-    iframe(
-      src="https://www.youtube.com/embed/QZat0oQ_9dk?ecver=2" 
-      width="640" 
-      height="360" 
-      frameborder="0" 
-      style="position:absolute;width:100%;height:100%;left:0" 
-      allowfullscreen
-    )   
-
-  h2 CiCaDiA is out now!
-  p: em.
-    Joined in lucid dreams by The StickFolk band of bugs,     #[br]
-    John Clark shares the story of Hoppy and his mystical     #[br]
-    journey from a midwestern pasture to CiCaDiA, bug heaven. #[br]
-
-  h3: a(href='https://itun.es/us/v4ISkb') Buy on iTunes
-
-  .center-block(style='max-width:600px;max-height:785px;min-width:300px;')
-    div(style='position: relative;height: 0;overflow: hidden;padding-bottom:100%; padding-top:200px;')
-      iframe(
-        name="album"
-        style="position:absolute;top:0px;left:0px;width:100%;height:100%;border:0px;" 
-        src="//widget.cdbaby.com/401e31c3-c8be-49f8-b0e3-1cf5fddf6916/album/light/opaque"
-      )
+  include _brands
+  include _yt-player  
+  include _cicadia
