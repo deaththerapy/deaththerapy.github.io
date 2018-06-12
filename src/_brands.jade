@@ -2,6 +2,9 @@ mixin social(name, url)
   li: a(href=url title=name)
     i(class=' fa fa-#{name} fa-fw fa-3x')
 
+include _partials/_spotify_follow
+br
+br
 ul.list-inline
   +social('facebook', 'https://www.facebook.com/johnanthonyclarkmusic/')
   +social('youtube', 'https://www.youtube.com/playlist?list=PL-7IQw2_9MqKZesDQuc-MKFCpaU7wDyLE')
