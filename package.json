@@ -4,7 +4,7 @@
   "description": "Home of deaththerapy.net",
   "scripts": {
     "build": "harp src build",
-    "deploy:build": "harp src /tmp/__temp_static_content",
+    "update-static-site": "gh-pages -n -d build",
     "start": "harp src"
   },
   "repository": {
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/deaththerapy/deaththerapy.github.io#readme",
   "dependencies": {
     "harp": "^0.41.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
