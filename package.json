@@ -4,7 +4,7 @@
   "description": "Home of deaththerapy.net",
   "scripts": {
     "build": "harp src build",
-    "update-static-site": "gh-pages -n -d build",
+    "update-static-site": "gh-pages -d build",
     "start": "harp src"
   },
   "repository": {
