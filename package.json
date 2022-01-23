@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "Home of deaththerapy.net",
   "scripts": {
-    "build": "harp src build",
+    "build": "harp src build && cp CNAME ./build",
     "update-static-site": "gh-pages -d build",
     "start": "harp src"
   },
