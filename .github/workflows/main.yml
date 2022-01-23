@@ -31,5 +31,6 @@ jobs:
           npm install
           npm run build
           npm run update-static-site -- -u "github-actions-bot <support+actions@github.com>"
+          echo 'deaththerapy.net' > CNAME
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
